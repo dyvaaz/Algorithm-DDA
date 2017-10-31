@@ -1,60 +1,31 @@
-/*k;
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package algoritmadda;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
-/**
- *
- * @author DIF
- */
+
 public class Garis extends JPanel {
     //Menentukan titik awal dan akhir
     private int x1,y1,x2,y2;
     
-    //atur set get dari titik awal dan titik akhir
-    public int getx1() {
-        return x1;
+    //atur set dari titik awal dan titik akhir
+ public void setx1y1(int x1, int y1) {
+        this.x1 = x1;
+        this.y1 = y1;
     }
-    
-    public int getx2() {
-        return x2;
-    }
-    
-    public int gety1() {
-        return y1;
-    }
-    
-    public int gety2() {
-        return y2;
-    }
-    
-    public void setx1(int xa) {
-        x1 = xa;
-    }
-    
-    public void sety1(int ya) {
-        y1 = ya;
-    }
-    
-    public void setx2(int xb) {
-        x2 = xb;
-    }
-    
-    public void sety2(int yb) {
-        y2 = yb;
+
+    public void setx2y2(int x2, int y2) {
+        this.x2 = x2;
+        this.y2 = y2;
     }
     public void paintComponent(Graphics g) {
         int x, y, steps, k;
         x = x1;
         y = y1;
         
-//menghitung dx dan dy
+        //menghitung dx dan dy
         int dx = Math.abs(x2-x1);
         int dy = Math.abs(y2-y1);
         

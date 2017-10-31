@@ -22,10 +22,9 @@ public class mainDDA {
         Garis hasil = new Garis();
         
         //menampilkan hasil dari garis dan mengatur titik
-        hasil.setx1(50);
-        hasil.sety1(100);
-        hasil.setx2(200);
-        hasil.sety2(150);
+        hasil.setx1y1(30,50);
+        hasil.setx2y2(180,100);
+        
         
         //Menampilkan Frame
         frame.add(hasil);
